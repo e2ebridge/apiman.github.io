@@ -9,7 +9,7 @@
 
     <link href="resources/bootstrap-3.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="resources/patternfly-1.0.5/css/patternfly.min.css" rel="stylesheet">
-    <link href="http://static.jboss.org/css/rhbar.css" media="screen" rel="stylesheet">
+    <link href="https://static.jboss.org/css/rhbar.css" media="screen" rel="stylesheet">
     <link href="resources/css/apiman-web.css?v=1.3.1.Final" rel="stylesheet">
     <link href="resources/css/apiman-web.responsive.css?v=1.3.1.Final" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -43,8 +43,8 @@
 </head>
 <body class="roadmap">
 <div id="rhbar">
-    <a class="jbdevlogo" href="http://www.jboss.org/projects/about" rel="nofollow" target="_blank"></a>
-    <a class="rhlogo" href="http://www.redhat.com/" rel="nofollow" target="_blank"></a>
+    <a class="jbdevlogo" href="https://www.jboss.org/projects/about" rel="nofollow" target="_blank"></a>
+    <a class="rhlogo" href="https://www.redhat.com/" rel="nofollow" target="_blank"></a>
 </div>
 <nav class="navbar navbar-inverse" id="top-nav" role="navigation">
     <div class="container">
@@ -122,14 +122,13 @@
             <div class="alert alert-info"
                  style="margin-top: 10px; background-color: #fdf2e5; border-width: 1px; line-height: 24px">
                 <span class="fa fa-fw fa-info-circle" style="color: #eb7720; font-size: 18px; line-height: 24px"></span>
-                Expect continued roadmap updates!
+                Apiman 2.X is here! We need your help to implement new features or to open feature-requests on github.
             </div>
 
             <p>
                 Here you will find a very high level roadmap for the apiman project. The details are
                 subject to change, but this page can provide a basic sense of the project's priorities
-                and version numbers. Additional information can typically be found in
-                <a href="https://github.com/apiman/apiman/issues" rel="nofollow" target="_blank">JIRA</a>.
+                and version numbers.
             </p>
             <p>
                 Typically there will be multiple iterative released within a major+minor version, with
@@ -139,12 +138,270 @@
             </p>
         </div>
 
-        <div class="col-lg-12 released">
-            <!-- Version 1.0 -->
-            <h2><a aria-expanded="false" class="" data-toggle="collapse" href="#features1_0">1.0 (Minimal But
-                Functional)</a></h2>
-            <div class="collapse" id="features1_0">
+        <!-- Version 2.X -->
+        <div class="col-lg-12">
+            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features2_X">2.X (Java Migration, new Angular UI, Custom CSS)</a></h2>
+            <div class="collapse in" id="features2_X">
                 <div class="col-lg-9">
+                    <ul class="release">
+                        <div class="headers">
+                            <span class="header">Feature</span>
+                            <span class="header pull-right">Help needed</span>
+                        </div>
+
+                        <li>
+                            <span>Apiman</span>
+                            <ul>
+                                <li>
+                                    A brand new UI for Apiman in Angular
+                                    <span class="in-version">Help needed</span>
+                                </li>
+                                <li>
+                                    Migration of Java 8 to Java 11+
+                                    <span class="in-version">Help needed</span>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>Developer Portal</span>
+                            <ul>
+                                <li>
+                                    Implementation for JPA (currently only working with Elasticsearch)
+                                    <span class="in-version">Help needed</span>
+                                </li>
+                                <li>
+                                    Allow custom CSS and Logo
+                                    <span class="in-version">Help needed</span>
+                                </li>
+                                <li>
+                                    Show advanced API details (Remaining Rate Limit, Configured Policies, etc.)
+                                    <span class="in-version">Help needed</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version 2.1 -->
+        <div class="col-lg-12">
+            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features2_1">2.1 (Developer Portal)</a></h2>
+            <div class="collapse in" id="features2_1">
+                <div class="col-lg-9">
+                    <ul class="release">
+                        <div class="headers">
+                            <span class="header">Feature</span>
+                            <span class="header pull-right">Released In</span>
+                        </div>
+
+                        <li>
+                            <span>Developer Portal</span>
+                            <ul>
+                                <li class="completed">
+                                    A developer Portal for Apiman
+                                    <span class="in-version">2.1.0.Final</span>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>General Features & Bug Fixes</span>
+                            <ul>
+                                <li class="completed">
+                                    Elasticsearch Fixes
+                                    <span class="in-version">2.1.0.Final</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Version 2.0 -->
+        <div class="col-lg-12 released">
+            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features2_0">2.0 (Elasticsearch 7+, Wildfly20+, Initial Data)</a></h2>
+            <div class="collapse in" id="features2_0">
+                <div class="col-lg-9">
+                    <ul class="release">
+                        <div class="headers">
+                            <span class="header">Feature</span>
+                            <span class="header pull-right">Released In</span>
+                        </div>
+
+                        <li>
+                            <span>Elasticserach</span>
+                            <ul>
+                                <li class="completed">
+                                    Support for Elasticsearch 7
+                                    <span class="in-version">2.0.0.Final</span>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <span>General Features & Bug Fixes</span>
+                            <ul>
+                                <li class="completed">
+                                    Vertical sidebar in the UI for better Usability
+                                    <span class="in-version">2.0.0.Final</span>
+                                </li>
+                                <li class="completed">
+                                    New mechanism to update/edit initial data (docker save)
+                                    <span class="in-version">2.0.0.Final</span>
+                                </li>
+                                <li class="completed">
+                                    Simpler Quickstart Setups with Wildfly20
+                                    <span class="in-version">2.0.0.Final</span>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apiman 1.X -->
+        <div class="col-lg-12 released">
+            <!-- Version 1.4 - 1.5 -->
+            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features1_4">1.4.X - 1.5.X (Bug fixes and improvements)</a></h2>
+            <div class="collapse" id="features1_4">
+                <div class="col-lg-9">
+                    <div class="alert alert-info"
+                         style="margin-top: 10px; background-color: #fdf2e5; border-width: 1px; line-height: 24px">
+                        <span class="fa fa-fw fa-info-circle" style="color: #eb7720; font-size: 18px; line-height: 24px"></span>
+                        Check the <a href="https://github.com/apiman/apiman/releases">github release notes</a> for more info!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 released">
+            <!-- Version 1.3 -->
+            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features1_3">1.3
+                (Integration)</a></h2>
+            <div class="collapse" id="features1_3">
+                <div class="col-lg-9">
+                    <!-- Version 1.3 -->
+                    <ul class="release">
+                        <div class="headers">
+                            <span class="header">Feature</span>
+                            <span class="header pull-right">Released In</span>
+                        </div>
+                        <!-- <li>
+                          <span>API Manager</span>
+                          <ul>
+                            <li>Additional documentation support - WSDL, RAML, etc</li>
+                            <li>API testing tools</li>
+                            <li>Watch a API for changes</li>
+                            <li>Watch an Organization for new APIs</li>
+                            <li>Comments/Forum for APIs</li>
+                            <li>API ratings</li>
+                            <li>Policy overhead ratings (measure of how impactful of performance a particular Policy will be)</li>
+                            <li>Joint API ownership (joint ownership by multiple Organizations)</li>
+                          </ul>
+                        </li> -->
+
+                        <li>
+                            <span>Policy Eventing</span>
+                            <ul>
+                                <li>Pluggable event firing component in Gateway</li>
+                                <li>Ability to fire events from policies</li>
+                                <li>Rate limiting events</li>
+                                <li>Support internal and custom/external event listeners</li>
+                            </ul>
+                        </li>
+                        <!-- <li>
+                          <span>Notifications/Tasks</span>
+                          <ul>
+                            <li>Per-user Task+Notification Inbox UI</li>
+                            <li>Add "Request Membership" functionality for organizations</li>
+                            <li>Full API to access tasks and notifications</li>
+                          </ul>
+                        </li> -->
+                        <li>
+                            <span>API Gateway</span>
+                            <ul>
+                                <li>JMS Support</li>
+                                <li class="completed">
+                                    Headless Registry (loads gateway config from JSON) <a
+                                        href="https://apiman.gitbooks.io/apiman-installation-guide/content/installation-guide/vertx/download.html#_headless_elasticsearch"
+                                        target="_blank">(Docs)</a>
+                                    <span class="in-version">1.3.0.Final</span>
+                                </li>
+                                <li class="completed">
+                                    Production-grade Vert.x Gateway Distro <a
+                                        href="https://apiman.gitbooks.io/apiman-installation-guide/content/installation-guide/vertx/download.html"
+                                        target="_blank">(Docs)</a>
+                                    <span class="in-version">1.3.0.Final</span>
+                                </li>
+                                <li class="completed">
+                                    3scale Immutable Registry (loads gateway config from 3scale backend with apiman
+                                    policy overlay) <a
+                                        href="https://apiman.gitbooks.io/apiman-installation-guide/installation-guide/vertx/download.html#_3scale_immutable"
+                                        target="_blank">(Docs)</a>
+                                    <span class="in-version">1.3.1.Final</span>
+                                </li>
+                                <li>
+                                    3scale Mutable Registry (loads gateway config from 3scale backend with apiman policy
+                                    overlay)
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Policies &amp; Components</span>
+                            <ul>
+                                <li>
+                                    <span class="completed">3scale Plugin (3scale auth, reporting, etc)</span>
+                                    <span class="in-version">1.3.1.Final</span>
+                                    <ul>
+                                        <li class="completed">
+                                            3scale API Key auth
+                                            <span class="in-version">1.3.1.Final</span>
+                                        </li>
+                                        <li class="completed">
+                                            3scale App Key &amp; App Key auth
+                                            <span class="in-version">1.3.1.Final</span>
+                                        </li>
+                                        <li>
+                                            3scale OAuth
+                                        </li>
+                                        <li class="completed">
+                                            3scale standard rate limiting
+                                            <span class="in-version">1.3.1.Final</span>
+                                        </li>
+                                        <li class="completed">
+                                            3scale batched hybrid rate limiting
+                                            <span class="in-version">1.3.1.Final</span>
+                                        </li>
+                                        <li class="completed">
+                                            3scale metrics &amp; reporting
+                                            <span class="in-version">1.3.1.Final</span>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <span>Automation &amp; Productivity</span>
+                        </li>
+                        <ul>
+                            <li>
+                                CLI tool for headless and 3scale registries. Generate config rather than hand-crafting.
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 released">
+            <!-- Version 1.2 -->
+            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features1_2">1.2 (Plugins,
+                Import/Export, Notifications &amp; Events)</a></h2>
+            <div class="collapse" id="features1_2">
+                <div class="col-lg-9">
+                    <!-- Version 1.2 -->
                     <ul class="release">
                         <div class="headers">
                             <span class="header">Feature</span>
@@ -153,103 +410,106 @@
                         <li>
                             <span>API Manager</span>
                             <ul>
-                                <li><span class="completed">REST API to manage Organizations, Services, Plans, Applications</span>
-                                    <span class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">Organization membership with roles</span> <span
-                                        class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">User Interface with Dashboard, Provider interface, Consumer interface</span>
-                                    <span class="in-version">1.0.0.Beta1</span></li>
-                                <li>Import services from WADL, Artificer, Swagger, etc...</li>
                                 <li><span
-                                        class="completed">Auditing of all entity (e.g. Org, Service, App) changes</span>
-                                    <span class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">Gateway management (support multiple gateways)</span> <span
-                                        class="in-version">1.0.1.Final</span></li>
-                                <li><span class="completed">Retire a Service/Unregister an App</span> <span
-                                        class="in-version">1.0.1.Final</span></li>
-                                <li><span class="completed">Lock Plans before they can be used</span> <span
-                                        class="in-version">1.0.1.Final</span></li>
+                                        class="completed">Support for deleting stuff (Orgs, Plans, APIs, Client Apps)</span>
+                                    <span class="in-version">1.2.4.Final</span></li>
                             </ul>
                         </li>
                         <li>
-                            <span>API Gateway</span>
+                            <span>Policies &amp; Components</span>
                             <ul>
-                                <li><span class="completed">Embeddable policy engine with async API</span> <span
-                                        class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">Standard WAR implementation</span> <span class="in-version">1.0.0.Beta1</span>
+                                <li><span class="completed">LDAP Client async component</span> <span class="in-version">1.2.0.Final</span>
                                 </li>
-                                <li><span class="completed">Support for HTTP based services</span> <span
-                                        class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">JDBC Client async component</span> <span class="in-version">1.2.0.Final</span>
+                                </li>
+                                <li><span class="completed">Circuit Breaker Policy</span> <span class="in-version">1.2.4.Final</span>
+                                </li>
                                 <li><span
-                                        class="completed">Asynchronous components available to policies: HttpClient</span>
-                                    <span class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">Policy application to Request, Response, and data (body) streams</span>
-                                    <span class="in-version">1.0.0.Beta1</span></li>
+                                        class="completed">Request payload inspection (enables better SOAP support)</span>
+                                    <span class="in-version">1.2.6.Final</span></li>
                             </ul>
                         </li>
                         <li>
-                            <span>Policies</span>
+                            <span>Plugins</span>
                             <ul>
-                                <li><span class="completed">BASIC Authentication</span> <span class="in-version">1.0.0.Beta1</span>
-                                </li>
-                                <li><span class="completed">Rate Limiting</span> <span
-                                        class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">IP Filtering</span> <span
-                                        class="in-version">1.0.0.Beta1</span></li>
-                                <li><span class="completed">Ignored Resources</span> <span class="in-version">1.0.1.Final</span>
-                                </li>
-                                <li><span class="completed">CORS</span> <span class="in-version">1.0.3.Final</span></li>
+                                <li><span class="completed">Plugin registry with easy-to-use UI</span> <span
+                                        class="in-version">1.2.0.Final</span></li>
+                                <li><span class="completed">Better support for loading/unloading plugins</span> <span
+                                        class="in-version">1.2.0.Final</span></li>
+                                <li><span class="completed">Better support for upgrading existing plugins</span> <span
+                                        class="in-version">1.2.0.Final</span></li>
+                                <li>Contribute policy configuration forms using custom HTML/javascript</li>
                             </ul>
                         </li>
                         <li>
-                            <span>Fabric8 Integration</span>
+                            <span>Billing</span>
                             <ul>
-                                <li><span class="completed">Integration with the fabric8 gateway (policy engine)</span>
-                                    <span class="in-version">1.0.1.Final</span></li>
+                                <li>Produce metrics for billing - store in pluggable billing storage</li>
+                                <li>API to access billing information</li>
+                                <li>Ability to export raw billing data</li>
                             </ul>
                         </li>
-                        <li><span class="completed">WildFly 8 runtime support</span> <span class="in-version">1.0.0.Beta1</span>
+                        <li>
+                            <span>Import/Export</span>
+                            <p style="color: #999">
+                                Note: this functionality should support 1) migrating data between environments 2)
+                                upgrading apiman to a new version 3) switching between apiman configurations (e.g. going
+                                from an RDBMS to Elastic storage).
+                            </p>
+                            <ul>
+                                <li><span class="completed">Export all data from apiman</span> <span class="in-version">1.2.0.Final</span>
+                                </li>
+                                <li><span class="completed">Import previously exported apiman data</span> <span
+                                        class="in-version">1.2.0.Final</span></li>
+                                <li><span class="completed">Data Migration from previous versions of apiman</span> <span
+                                        class="in-version">1.2.3.Final</span></li>
+                                <li>Transformation tools for exported apiman data</li>
+                                <li><span class="completed">Import APIs from an API Catalog</span> <span
+                                        class="in-version">1.2.0.Final</span></li>
+                                <li>Import APIs from a WADL URL</li>
+                                <li>Import APIs from a Swagger URL</li>
+                            </ul>
                         </li>
-                        <li><span class="completed">Clone a version (App, Service, Plan)</span> <span
-                                class="in-version">1.0.1.Final</span></li>
-                        <li><span class="completed">Support "public" services (can be invoked without a Contract)</span>
-                            <span class="in-version">1.0.1.Final</span></li>
-                        <li><span class="completed">Plugin framework - contribute policies</span> <span
-                                class="in-version">1.0.3.Final</span></li>
-                        <li><span class="completed">Plugin framework - contribute policy configuration forms based on <a
-                                href="http://json-schema.org/" rel="nofollow" target="_blank">JSON Schema</a></span>
-                            <span class="in-version">1.0.3.Final</span></li>
+                        <li>
+                            <span>Customization Points</span>
+                            <ul>
+                                <li><span class="completed">API Key Generation</span> <span class="in-version">1.2.0.Final</span>
+                                </li>
+                                <li><span class="completed">Data Encryption (when encrypting configuration data for storage)</span>
+                                    <span class="in-version">1.2.0.Final</span></li>
+                                <li><span class="completed">Policy Failure/Error Response Formatting</span> <span
+                                        class="in-version">1.2.0.Final</span></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 relnotes">
-                    <!-- Version 1.0 -->
-                    <h2>1.0 Release Notes</h2>
+                    <h2>1.2 Release Notes</h2>
                     <div class="release-notes">
-                        <div>
-                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12325096"
-                               rel="nofollow" target="_blank">1.0.0.Beta1</a> <span
-                                class="label-small">(2014 Nov 21)</span></div>
-                        <div>
-                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326282"
-                               rel="nofollow" target="_blank">1.0.0.Final</a> <span
-                                class="label-small">(2014 Dec 18)</span></div>
-                        <div>
-                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326467"
-                               rel="nofollow" target="_blank">1.0.1.Final</a> <span
-                                class="label-small">(2015 Jan 06)</span></div>
-                        <div>
-                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326491"
-                               rel="nofollow" target="_blank">1.0.2.Final</a> <span
-                                class="label-small">(2015 Jan 29)</span></div>
-                        <div>
-                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326633"
-                               rel="nofollow" target="_blank">1.0.3.Final</a> <span
-                                class="label-small">(2015 Feb 17)</span></div>
+                        <div><a href="https://red.ht/1OK3LG7">1.2.0.Final</a> <span
+                                class="label-small">(2016 January 11)</span></div>
+                        <div><a href="https://red.ht/1OC1Tf7">1.2.1.Final</a> <span
+                                class="label-small">(2016 January 22)</span></div>
+                        <div><a href="https://red.ht/1QGBN8F">1.2.2.Final</a> <span class="label-small">(2016 February 29)</span>
+                        </div>
+                        <div><a href="https://red.ht/21HvJDe">1.2.3.Final</a> <span
+                                class="label-small">(2016 March 23)</span></div>
+                        <div><a href="https://red.ht/23NVU1k">1.2.4.Final</a> <span
+                                class="label-small">(2016 April 22)</span></div>
+                        <div><a href="https://red.ht/1SrSgD1">1.2.5.Final</a> <span
+                                class="label-small">(2016 April 26)</span></div>
+                        <div><a href="https://red.ht/1Ro8mby">1.2.6.Final</a> <span
+                                class="label-small">(2016 May 24)</span></div>
+                        <div><a href="https://red.ht/28WGa3V">1.2.7.Final</a> <span
+                                class="label-small">(2016 June 22)</span></div>
+                        <div><a href="https://red.ht/2dp4uML">1.2.8.Final</a> <span class="label-small">(2016 September 27)</span>
+                        </div>
+                        <div><a href="https://red.ht/2iW301B">1.2.9.Final</a> <span
+                                class="label-small">(2017 January 6)</span></div>
                     </div>
                 </div>
             </div>
         </div>
-
         <div class="col-lg-12 released">
             <!-- Version 1.1 -->
             <h2 class=""><a aria-expanded="false" class="" data-toggle="collapse" href="#features1_1">1.1 (Core
@@ -379,22 +639,20 @@
                             <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12327805"
                                rel="nofollow" target="_blank">1.1.7.Final</a> <span
                                 class="label-small">(2015 Aug 21)</span></div>
-                        <div><a href="http://red.ht/1igFSrj" rel="nofollow" target="_blank">1.1.8.Final</a> <span
+                        <div><a href="https://red.ht/1igFSrj" rel="nofollow" target="_blank">1.1.8.Final</a> <span
                                 class="label-small">(2015 Sep 10)</span></div>
-                        <div><a href="http://red.ht/1MJbBsx" rel="nofollow" target="_blank">1.1.9.Final</a> <span
+                        <div><a href="https://red.ht/1MJbBsx" rel="nofollow" target="_blank">1.1.9.Final</a> <span
                                 class="label-small">(2015 Oct 23)</span></div>
                     </div>
                 </div>
             </div>
         </div>
-
-        <div class="col-lg-12">
-            <!-- Version 1.2 -->
-            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features1_2">1.2 (Plugins,
-                Import/Export, Notifications &amp; Events)</a></h2>
-            <div class="collapse" id="features1_2">
+        <div class="col-lg-12 released">
+            <!-- Version 1.0 -->
+            <h2><a aria-expanded="false" class="" data-toggle="collapse" href="#features1_0">1.0 (Minimal But
+                Functional)</a></h2>
+            <div class="collapse" id="features1_0">
                 <div class="col-lg-9">
-                    <!-- Version 1.2 -->
                     <ul class="release">
                         <div class="headers">
                             <span class="header">Feature</span>
@@ -403,218 +661,99 @@
                         <li>
                             <span>API Manager</span>
                             <ul>
+                                <li><span class="completed">REST API to manage Organizations, Services, Plans, Applications</span>
+                                    <span class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">Organization membership with roles</span> <span
+                                        class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">User Interface with Dashboard, Provider interface, Consumer interface</span>
+                                    <span class="in-version">1.0.0.Beta1</span></li>
+                                <li>Import services from WADL, Artificer, Swagger, etc...</li>
                                 <li><span
-                                        class="completed">Support for deleting stuff (Orgs, Plans, APIs, Client Apps)</span>
-                                    <span class="in-version">1.2.4.Final</span></li>
+                                        class="completed">Auditing of all entity (e.g. Org, Service, App) changes</span>
+                                    <span class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">Gateway management (support multiple gateways)</span> <span
+                                        class="in-version">1.0.1.Final</span></li>
+                                <li><span class="completed">Retire a Service/Unregister an App</span> <span
+                                        class="in-version">1.0.1.Final</span></li>
+                                <li><span class="completed">Lock Plans before they can be used</span> <span
+                                        class="in-version">1.0.1.Final</span></li>
                             </ul>
                         </li>
-                        <li>
-                            <span>Policies &amp; Components</span>
-                            <ul>
-                                <li><span class="completed">LDAP Client async component</span> <span class="in-version">1.2.0.Final</span>
-                                </li>
-                                <li><span class="completed">JDBC Client async component</span> <span class="in-version">1.2.0.Final</span>
-                                </li>
-                                <li><span class="completed">Circuit Breaker Policy</span> <span class="in-version">1.2.4.Final</span>
-                                </li>
-                                <li><span
-                                        class="completed">Request payload inspection (enables better SOAP support)</span>
-                                    <span class="in-version">1.2.6.Final</span></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span>Plugins</span>
-                            <ul>
-                                <li><span class="completed">Plugin registry with easy-to-use UI</span> <span
-                                        class="in-version">1.2.0.Final</span></li>
-                                <li><span class="completed">Better support for loading/unloading plugins</span> <span
-                                        class="in-version">1.2.0.Final</span></li>
-                                <li><span class="completed">Better support for upgrading existing plugins</span> <span
-                                        class="in-version">1.2.0.Final</span></li>
-                                <li>Contribute policy configuration forms using custom HTML/javascript</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span>Billing</span>
-                            <ul>
-                                <li>Produce metrics for billing - store in pluggable billing storage</li>
-                                <li>API to access billing information</li>
-                                <li>Ability to export raw billing data</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span>Import/Export</span>
-                            <p style="color: #999">
-                                Note: this functionality should support 1) migrating data between environments 2)
-                                upgrading apiman to a new version 3) switching between apiman configurations (e.g. going
-                                from an RDBMS to Elastic storage).
-                            </p>
-                            <ul>
-                                <li><span class="completed">Export all data from apiman</span> <span class="in-version">1.2.0.Final</span>
-                                </li>
-                                <li><span class="completed">Import previously exported apiman data</span> <span
-                                        class="in-version">1.2.0.Final</span></li>
-                                <li><span class="completed">Data Migration from previous versions of apiman</span> <span
-                                        class="in-version">1.2.3.Final</span></li>
-                                <li>Transformation tools for exported apiman data</li>
-                                <li><span class="completed">Import APIs from an API Catalog</span> <span
-                                        class="in-version">1.2.0.Final</span></li>
-                                <li>Import APIs from a WADL URL</li>
-                                <li>Import APIs from a Swagger URL</li>
-                            </ul>
-                        </li>
-                        <li>
-                            <span>Customization Points</span>
-                            <ul>
-                                <li><span class="completed">API Key Generation</span> <span class="in-version">1.2.0.Final</span>
-                                </li>
-                                <li><span class="completed">Data Encryption (when encrypting configuration data for storage)</span>
-                                    <span class="in-version">1.2.0.Final</span></li>
-                                <li><span class="completed">Policy Failure/Error Response Formatting</span> <span
-                                        class="in-version">1.2.0.Final</span></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 relnotes">
-                    <h2>1.2 Release Notes</h2>
-                    <div class="release-notes">
-                        <div><a href="http://red.ht/1OK3LG7">1.2.0.Final</a> <span
-                                class="label-small">(2016 January 11)</span></div>
-                        <div><a href="http://red.ht/1OC1Tf7">1.2.1.Final</a> <span
-                                class="label-small">(2016 January 22)</span></div>
-                        <div><a href="http://red.ht/1QGBN8F">1.2.2.Final</a> <span class="label-small">(2016 February 29)</span>
-                        </div>
-                        <div><a href="http://red.ht/21HvJDe">1.2.3.Final</a> <span
-                                class="label-small">(2016 March 23)</span></div>
-                        <div><a href="http://red.ht/23NVU1k">1.2.4.Final</a> <span
-                                class="label-small">(2016 April 22)</span></div>
-                        <div><a href="http://red.ht/1SrSgD1">1.2.5.Final</a> <span
-                                class="label-small">(2016 April 26)</span></div>
-                        <div><a href="http://red.ht/1Ro8mby">1.2.6.Final</a> <span
-                                class="label-small">(2016 May 24)</span></div>
-                        <div><a href="http://red.ht/28WGa3V">1.2.7.Final</a> <span
-                                class="label-small">(2016 June 22)</span></div>
-                        <div><a href="http://red.ht/2dp4uML">1.2.8.Final</a> <span class="label-small">(2016 September 27)</span>
-                        </div>
-                        <div><a href="http://red.ht/2iW301B">1.2.9.Final</a> <span
-                                class="label-small">(2017 January 6)</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div class="col-lg-12">
-            <!-- Version 1.3 -->
-            <h2 class=""><a aria-expanded="true" class="" data-toggle="collapse" href="#features1_3">1.3
-                (Integration)</a></h2>
-            <div class="collapse in" id="features1_3">
-                <div class="col-lg-9">
-                    <!-- Version 1.3 -->
-                    <ul class="release">
-                        <!-- <li>
-                          <span>API Manager</span>
-                          <ul>
-                            <li>Additional documentation support - WSDL, RAML, etc</li>
-                            <li>API testing tools</li>
-                            <li>Watch a API for changes</li>
-                            <li>Watch an Organization for new APIs</li>
-                            <li>Comments/Forum for APIs</li>
-                            <li>API ratings</li>
-                            <li>Policy overhead ratings (measure of how impactful of performance a particular Policy will be)</li>
-                            <li>Joint API ownership (joint ownership by multiple Organizations)</li>
-                          </ul>
-                        </li> -->
-
-                        <li>
-                            <span>Policy Eventing</span>
-                            <ul>
-                                <li>Pluggable event firing component in Gateway</li>
-                                <li>Ability to fire events from policies</li>
-                                <li>Rate limiting events</li>
-                                <li>Support internal and custom/external event listeners</li>
-                            </ul>
-                        </li>
-                        <!-- <li>
-                          <span>Notifications/Tasks</span>
-                          <ul>
-                            <li>Per-user Task+Notification Inbox UI</li>
-                            <li>Add "Request Membership" functionality for organizations</li>
-                            <li>Full API to access tasks and notifications</li>
-                          </ul>
-                        </li> -->
                         <li>
                             <span>API Gateway</span>
                             <ul>
-                                <li>JMS Support</li>
-                                <li class="completed">
-                                    Headless Registry (loads gateway config from JSON) <a
-                                        href="https://apiman.gitbooks.io/apiman-installation-guide/content/installation-guide/vertx/download.html#_headless_elasticsearch"
-                                        target="_blank">(Docs)</a>
-                                    <span class="in-version">1.3.0.Final</span>
+                                <li><span class="completed">Embeddable policy engine with async API</span> <span
+                                        class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">Standard WAR implementation</span> <span class="in-version">1.0.0.Beta1</span>
                                 </li>
-                                <li class="completed">
-                                    Production-grade Vert.x Gateway Distro <a
-                                        href="https://apiman.gitbooks.io/apiman-installation-guide/content/installation-guide/vertx/download.html"
-                                        target="_blank">(Docs)</a>
-                                    <span class="in-version">1.3.0.Final</span>
-                                </li>
-                                <li class="completed">
-                                    3scale Immutable Registry (loads gateway config from 3scale backend with apiman
-                                    policy overlay) <a
-                                        href="https://apiman.gitbooks.io/apiman-installation-guide/installation-guide/vertx/download.html#_3scale_immutable"
-                                        target="_blank">(Docs)</a>
-                                    <span class="in-version">1.3.1.Final</span>
-                                </li>
-                                <li>
-                                    3scale Mutable Registry (loads gateway config from 3scale backend with apiman policy
-                                    overlay)
-                                </li>
+                                <li><span class="completed">Support for HTTP based services</span> <span
+                                        class="in-version">1.0.0.Beta1</span></li>
+                                <li><span
+                                        class="completed">Asynchronous components available to policies: HttpClient</span>
+                                    <span class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">Policy application to Request, Response, and data (body) streams</span>
+                                    <span class="in-version">1.0.0.Beta1</span></li>
                             </ul>
                         </li>
                         <li>
-                            <span>Policies &amp; Components</span>
+                            <span>Policies</span>
                             <ul>
-                                <li>
-                                    <span class="completed">3scale Plugin (3scale auth, reporting, etc)</span>
-                                    <span class="in-version">1.3.1.Final</span>
-                                    <ul>
-                                        <li class="completed">
-                                            3scale API Key auth
-                                            <span class="in-version">1.3.1.Final</span>
-                                        </li>
-                                        <li class="completed">
-                                            3scale App Key &amp; App Key auth
-                                            <span class="in-version">1.3.1.Final</span>
-                                        </li>
-                                        <li>
-                                            3scale OAuth
-                                        </li>
-                                        <li class="completed">
-                                            3scale standard rate limiting
-                                            <span class="in-version">1.3.1.Final</span>
-                                        </li>
-                                        <li class="completed">
-                                            3scale batched hybrid rate limiting
-                                            <span class="in-version">1.3.1.Final</span>
-                                        </li>
-                                        <li class="completed">
-                                            3scale metrics &amp; reporting
-                                            <span class="in-version">1.3.1.Final</span>
-                                        </li>
-                                    </ul>
+                                <li><span class="completed">BASIC Authentication</span> <span class="in-version">1.0.0.Beta1</span>
                                 </li>
+                                <li><span class="completed">Rate Limiting</span> <span
+                                        class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">IP Filtering</span> <span
+                                        class="in-version">1.0.0.Beta1</span></li>
+                                <li><span class="completed">Ignored Resources</span> <span class="in-version">1.0.1.Final</span>
+                                </li>
+                                <li><span class="completed">CORS</span> <span class="in-version">1.0.3.Final</span></li>
                             </ul>
                         </li>
                         <li>
-                            <span>Automation &amp; Productivity</span>
+                            <span>Fabric8 Integration</span>
+                            <ul>
+                                <li><span class="completed">Integration with the fabric8 gateway (policy engine)</span>
+                                    <span class="in-version">1.0.1.Final</span></li>
+                            </ul>
                         </li>
-                        <ul>
-                            <li>
-                                CLI tool for headless and 3scale registries. Generate config rather than hand-crafting.
-                            </li>
-                        </ul>
+                        <li><span class="completed">WildFly 8 runtime support</span> <span class="in-version">1.0.0.Beta1</span>
+                        </li>
+                        <li><span class="completed">Clone a version (App, Service, Plan)</span> <span
+                                class="in-version">1.0.1.Final</span></li>
+                        <li><span class="completed">Support "public" services (can be invoked without a Contract)</span>
+                            <span class="in-version">1.0.1.Final</span></li>
+                        <li><span class="completed">Plugin framework - contribute policies</span> <span
+                                class="in-version">1.0.3.Final</span></li>
+                        <li><span class="completed">Plugin framework - contribute policy configuration forms based on <a
+                                href="https://json-schema.org/" rel="nofollow" target="_blank">JSON Schema</a></span>
+                            <span class="in-version">1.0.3.Final</span></li>
                     </ul>
+                </div>
+                <div class="col-lg-3 relnotes">
+                    <!-- Version 1.0 -->
+                    <h2>1.0 Release Notes</h2>
+                    <div class="release-notes">
+                        <div>
+                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12325096"
+                               rel="nofollow" target="_blank">1.0.0.Beta1</a> <span
+                                class="label-small">(2014 Nov 21)</span></div>
+                        <div>
+                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326282"
+                               rel="nofollow" target="_blank">1.0.0.Final</a> <span
+                                class="label-small">(2014 Dec 18)</span></div>
+                        <div>
+                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326467"
+                               rel="nofollow" target="_blank">1.0.1.Final</a> <span
+                                class="label-small">(2015 Jan 06)</span></div>
+                        <div>
+                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326491"
+                               rel="nofollow" target="_blank">1.0.2.Final</a> <span
+                                class="label-small">(2015 Jan 29)</span></div>
+                        <div>
+                            <a href="https://issues.jboss.org/secure/ReleaseNote.jspa?projectId=12314121&version=12326633"
+                               rel="nofollow" target="_blank">1.0.3.Final</a> <span
+                                class="label-small">(2015 Feb 17)</span></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -627,9 +766,9 @@
                 <div class="widget col-sm-6 col-md-6 widget_text">
                     <div class="textwidget">
                         <p>
-                            Copyright © 2017 Red Hat, Inc. All rights reserved.<br>
+                            Copyright © 2020 Red Hat, Inc. All rights reserved.<br>
                             apiman code is open source and released under <a
-                                href="http://www.apache.org/licenses/LICENSE-2.0.html" rel="nofollow" target="_blank">Apache
+                                href="https://www.apache.org/licenses/LICENSE-2.0.html" rel="nofollow" target="_blank">Apache
                             License, v2.0</a>.<br>
                             <a href="disclosure.html">Open Source Disclosure</a>
                         </p>
@@ -637,8 +776,8 @@
                 </div>
                 <div class="widget col-sm-6 col-md-6 widget_text" style="text-align: right">
 
-                    <a href="http://www.redhat.com" rel="nofollow" target="_blank"><img
-                            alt="Red Hat" src="http://static.jboss.org/theme/images/common/redhat_logo.png"></a>
+                    <a href="https://www.redhat.com" rel="nofollow" target="_blank"><img
+                            alt="Red Hat" src="https://static.jboss.org/theme/images/common/redhat_logo.png"></a>
                 </div>
             </div>
             <nav class="clearfix"></nav>
